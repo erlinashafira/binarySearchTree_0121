@@ -54,7 +54,12 @@ class BinaryTree{
         newNode->leftchild = nullptr;
         newNode->rightchild = nullptr;
 
-        
+        //step 4:
+        Node *parent = nullptr;
+        Node *currentNode = nullptr;
+        search(x, parent, currentNode);
+
+
 
 
 
