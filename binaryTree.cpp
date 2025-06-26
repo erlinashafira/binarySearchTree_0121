@@ -65,13 +65,27 @@ class BinaryTree{
 
             return;
         }
-        
 
+        //step 6: if the value in the data field of new node is less than that of parent
+        if(x < parent->info){
+            // 6a. make the leftchild of parent point to the new node
+            parent->leftchild = newNode;
 
+            //6b: exit
+            return;
+        }
+        // step 7: if the value in the data field of the new node ids greater than that of the
+        else if (x > parent->info){
 
+            //7a. make the right child of parent point to the new node
+            parent->rightchild = newNode;
 
+            //7b. exit
+            return;
+        }
+    }
 
-
-
+    bool isEmpty(){
+        return ROOT == nullptr;
     }
 }
