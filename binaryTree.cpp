@@ -88,4 +88,9 @@ class BinaryTree{
     bool isEmpty(){
         return ROOT == nullptr;
     }
+
+    void inorder(Node *ptr)
+    {
+        if (isEmpty())
+    }
 }
