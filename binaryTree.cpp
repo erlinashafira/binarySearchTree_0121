@@ -19,11 +19,13 @@ class BinaryTree{
     Node *ROOT;
 
     BinaryTree(){
-        ROOT = nullptr;
+        ROOT = nullptr; //intializing ROOT to null
     }
 
     void search(int element, Node *&parent, Node *&currentNode)
     {
+        //this function serches the currentNode of the
+        //specified Node as well as the current Node of its parent
         currentNode = ROOT;
         parent = nullptr;
         while ((currentNode != nullptr) && (currentNode->info != element))
@@ -31,6 +33,15 @@ class BinaryTree{
             parent = currentNode;
             if (element < currentNode->info)
                 currentNode = currentNode->leftchild;
+            else
+                currentNode = currentNode->rightchild;
+
         }
+    }
+
+    void insert(){
+        int x;
+        cout << "Masukkan nilai: ";
+        cin >> x;
     }
 }
