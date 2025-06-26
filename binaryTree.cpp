@@ -13,3 +13,12 @@ class Node{
         rightchild = nullptr;
     }
 };
+
+class BinaryTree{
+    public:
+    Node *ROOT;
+
+    BinaryTree(){
+        
+    }
+}
